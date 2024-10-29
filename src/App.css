@@ -1,0 +1,105 @@
+/* Center content */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  flex: 1;
+  outline: none;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #13b2b8;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #128d90;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #a6a6a6;
+}
+
+.overdue {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.due-date {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.button-group button {
+  margin-left: 5px;
+}
+
+.priority-high {
+  border-left: 4px solid #e63946;
+}
+
+.priority-medium {
+  border-left: 4px solid #f4a261;
+}
+
+.priority-low {
+  border-left: 4px solid #2a9d8f;
+}
